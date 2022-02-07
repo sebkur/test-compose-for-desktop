@@ -42,6 +42,7 @@ allprojects {
 dependencies {
     implementation(compose.desktop.currentOs)
     implementation(compose.materialIconsExtended)
+    implementation("org.jetbrains.skiko:skiko:0.7.7")
 }
 
 tasks.withType<KotlinCompile> {
