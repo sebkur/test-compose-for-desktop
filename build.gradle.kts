@@ -71,6 +71,10 @@ compose.desktop {
             vendor = "Mobanisto"
             copyright = "2022 Mobanisto"
             licenseFile.set(project.file("LICENSE.txt"))
+            // The files contained in this directory will be available after installing using
+            // the native installation package.
+            // On Linux, they will be located at /opt/test-project/lib/app/resources
+            // On Windows, they will be located at C:\Program Files\Test\app\resources
             appResourcesRootDir.set(project.layout.projectDirectory.dir("src/appdata"))
             linux {
                 packageName = "test-project"
