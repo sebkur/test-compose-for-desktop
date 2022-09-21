@@ -78,11 +78,13 @@ compose.desktop {
             appResourcesRootDir.set(project.layout.projectDirectory.dir("src/appdata"))
             linux {
                 packageName = "test-project"
+                iconFile.set(project.file("src/main/resources/logo.png"))
                 debPackageVersion = "$versionCode"
                 appCategory = "comm"
                 menuGroup = "Network;Chat;InstantMessaging;"
             }
             windows {
+                iconFile.set(project.file("src/main/resources/logo.ico"))
                 upgradeUuid = "FD4C39EF-F3A3-4E72-8D4F-41AC5CF6E1AA"
             }
         }
