@@ -18,9 +18,9 @@ buildscript {
 }
 
 plugins {
-    kotlin("jvm") version "1.6.10"
-    kotlin("kapt") version "1.6.10"
-    id("org.jetbrains.compose") version "1.1.1"
+    kotlin("jvm") version "1.7.10"
+    kotlin("kapt") version "1.7.10"
+    id("org.jetbrains.compose") version "1.2.0-SNAPSHOT"
     id("java")
     id("idea")
     id("org.jlleitschuh.gradle.ktlint") version "10.1.0"
@@ -76,6 +76,7 @@ compose.desktop {
             // On Linux, they will be located at /opt/test-project/lib/app/resources
             // On Windows, they will be located at C:\Program Files\Test\app\resources
             appResourcesRootDir.set(project.layout.projectDirectory.dir("src/appdata"))
+            jpackageResourcesRootDir.set(project.layout.projectDirectory.dir("src/jpackage"))
             linux {
                 packageName = "test-project"
                 iconFile.set(project.file("src/main/resources/logo.png"))
