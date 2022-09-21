@@ -65,7 +65,7 @@ compose.desktop {
     application {
         mainClass = "de.mobanisto.test.MainKt"
         nativeDistributions {
-            targetFormats(TargetFormat.Deb)
+            targetFormats(TargetFormat.Deb, TargetFormat.Msi)
             packageName = "Test"
             description = "Test project"
             vendor = "Mobanisto"
@@ -76,6 +76,9 @@ compose.desktop {
                 debPackageVersion = "$versionCode"
                 appCategory = "comm"
                 menuGroup = "Network;Chat;InstantMessaging;"
+            }
+            windows {
+                upgradeUuid = "FD4C39EF-F3A3-4E72-8D4F-41AC5CF6E1AA"
             }
         }
     }
