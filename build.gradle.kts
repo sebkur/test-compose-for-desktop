@@ -71,6 +71,7 @@ compose.desktop {
             vendor = "Mobanisto"
             copyright = "2022 Mobanisto"
             licenseFile.set(project.file("LICENSE.txt"))
+            appResourcesRootDir.set(project.layout.projectDirectory.dir("src/appdata"))
             linux {
                 packageName = "test-project"
                 debPackageVersion = "$versionCode"

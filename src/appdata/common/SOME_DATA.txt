@@ -1,0 +1,2 @@
+Here's some important data.
+It will be included in the native distribution.
