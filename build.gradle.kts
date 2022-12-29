@@ -77,7 +77,7 @@ compose.desktop {
             linux {
                 packageName = "test-project"
                 iconFile.set(project.file("src/main/resources/logo.png"))
-                debPackageVersion = "$versionCode"
+                debPackageVersion = versionCode
                 appCategory = "comm"
                 menuGroup = "Network;Chat;InstantMessaging;"
             }
